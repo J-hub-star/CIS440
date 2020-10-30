@@ -32,7 +32,6 @@ class Vehicle(models.Model):
     tier_id = models.ForeignKey(Payment_Tiers,on_delete=models.CASCADE)
 
 # Rental Record Table
-# another change
 class Rental_record:
     rental_id = models.AutoField(primary_key=True)
     rent_date = models.DateField()
@@ -42,7 +41,6 @@ class Rental_record:
 
 #Car avaliability
 
-#New Comment here...
 
 
 
