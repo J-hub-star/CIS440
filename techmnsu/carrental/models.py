@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-
 """
 Author : Jai Behl
 
@@ -34,7 +33,7 @@ class Vehicle(models.Model):
 
 #Rental Record Table
 class Rental_record:
-    rental_id = models.IntegerField(primary_key=True)
+    rental_id = models.AutoField(primary_key=True)
     rent_date = models.DateField()
     returned_date = models.DateField()
     vehicle_id = models.ForeignKey(Vehicle,on_delete=models.CASCADE)
@@ -42,7 +41,7 @@ class Rental_record:
 
 #Car avaliability
 
-
+#New Comment here...
 
 
 
