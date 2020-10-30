@@ -6,13 +6,13 @@ Author : Jai Behl
 """
 # Create your models here.
 
-#Payment Tier table
+# Payment Tier table
 class Payment_Tiers(models.Model):
     tier_id = models.IntegerField(primary_key=True)
     tier_type = models.CharField(max_length=15)
     tier_discount = models.IntegerField()
 
-#Location Table.
+# Location Table.
 class Location(models.Model):
     location_id = models.IntegerField(primary_key=True)
     state = models.CharField(max_length=15)
@@ -21,7 +21,7 @@ class Location(models.Model):
     street_address = models.CharField(max_length=15)
     phone_number = models.IntegerField()
 
-#Vehicle Table
+# Vehicle Table
 class Vehicle(models.Model):
     vehicle_id = models.IntegerField(primary_key=True)
     vehicle_make = models.CharField(max_length=15)
@@ -31,7 +31,8 @@ class Vehicle(models.Model):
     location_id = models.ForeignKey(Location,on_delete=models.CASCADE)
     tier_id = models.ForeignKey(Payment_Tiers,on_delete=models.CASCADE)
 
-#Rental Record Table
+# Rental Record Table
+# another change
 class Rental_record:
     rental_id = models.AutoField(primary_key=True)
     rent_date = models.DateField()
