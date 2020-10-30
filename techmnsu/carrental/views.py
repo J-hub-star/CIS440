@@ -2,14 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def home(request):
-    return render(request,'carrental/index.html')
 
-def about(request):
-    return HttpResponse("About")
+# Isuru
+def reservation(request):
+    pass
 
+# Jay
+def car_ava(request):
+    pass
 
-def profile(request):
-    return HttpResponse("Profile")
-
+# Andrew
+def rental_history(request):
+    pass
 
