@@ -18,11 +18,12 @@ from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
 
-
+#url patterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('carrental.urls')),
     path('user/',include('users.urls')),
+    #path('history/',include('history.urls'))
 ]
 
 

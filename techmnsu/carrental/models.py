@@ -39,7 +39,7 @@ class Rental_record:
     vehicle_id = models.ForeignKey(Vehicle,on_delete=models.CASCADE)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
-#Car avaliability
+# Car avaliability
 
 
 

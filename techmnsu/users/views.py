@@ -20,3 +20,17 @@ def registration(request):
 @login_required
 def profile(request):
     return render(request, 'users/profile.html')
+
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_car_rental',
+        'USER': 'andrew',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '3306'
+    }
+}
+
+"""

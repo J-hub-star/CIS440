@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-# Isuru
+
 def reservation(request):
     pass
 
@@ -14,4 +14,8 @@ def car_ava(request):
 # Andrew
 def rental_history(request):
     pass
+
+
+def home(request):
+    return HttpResponse("New Home")
 
