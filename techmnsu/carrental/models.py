@@ -39,7 +39,13 @@ class Rental_record:
     vehicle_id = models.ForeignKey(Vehicle,on_delete=models.CASCADE)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
-#Car avaliability
+# Car avaliability
+class Vehicle_Availibility(models.Model):
+    avaliability_id = models.IntegerField(primary_key=True)
+    cars_availible = models.DateField()
+    cars_rented = models.DateField()
+    vehicle_id = models.ForeignKey(Vehicle, on_delete=models.CASCADE)
+    location_id = models.ForeignKey(Location,on_delete=models.CASCADE)
 
 
 
