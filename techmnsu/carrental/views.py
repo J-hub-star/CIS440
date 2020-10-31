@@ -15,3 +15,5 @@ def car_ava(request):
 def rental_history(request):
     pass
 
+def home(request):
+    return HttpResponse("New Home")
