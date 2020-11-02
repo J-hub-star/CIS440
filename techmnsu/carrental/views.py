@@ -11,9 +11,5 @@ def reservation(request):
 def car_ava(request):
     pass
 
-# Andrew
-def rental_history(request):
-    pass
-
 def home(request):
     return HttpResponse("New Home")

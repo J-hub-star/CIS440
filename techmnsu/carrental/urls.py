@@ -4,5 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home,name = 'Carrental-home'),
+    path('', views.home,name = 'carrental-home'),
 ]
+
