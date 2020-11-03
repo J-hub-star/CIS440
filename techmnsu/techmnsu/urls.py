@@ -8,7 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('carrental.urls')),
     path('user/',include('users.urls')),
-    path('history/', include('history.urls)')),
+    path('history/', include('history.urls'))),
 ]
 
 
